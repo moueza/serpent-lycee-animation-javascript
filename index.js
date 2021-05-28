@@ -49,11 +49,17 @@ function drawArrayUpdate(sizeArrayMaxSizee) {
 }
 
 //appends Point to end Of any Array
-function addPointToEnd(Point p) {
+function addPointToEnd(pointt) {
 
 }
 
 //update Array (head + tail pop()) regarding  sizeArrayMaxSize
-function addPointToEndIf(sizeArrayMaxSizee) {
+function addPointToEndIf(pointt) {
+
+}
+
+class Point{
+  x;
+  y;
 
 }
