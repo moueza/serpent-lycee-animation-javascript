@@ -30,3 +30,30 @@ function domloaded() {
 
   ctx1.stroke();
 }
+
+//just On draw from array
+function drawArrayOn() {
+
+}
+
+//just draw last line
+function drawArrayDiff() {
+
+}
+
+var sizeArrayMaxSize=10;
+
+//just draw last line AND delete first line White + update array
+function drawArrayUpdate(sizeArrayMaxSizee) {
+
+}
+
+//appends Point to end Of any Array
+function addPointToEnd(Point p) {
+
+}
+
+//update Array (head + tail pop()) regarding  sizeArrayMaxSize
+function addPointToEndIf(sizeArrayMaxSizee) {
+
+}
