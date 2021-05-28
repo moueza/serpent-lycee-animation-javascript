@@ -9,23 +9,18 @@
 
   <body>
     <div id="app">
-      v12
+      v16
       <div id="div1"></div>
 Canvas1:
 <!--rect vert : https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API-->
-      <canvas id="canvas"></canvas>
-     <br> Canvas2:
-      <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
-      </canvas>
+      <canvas id="canvas" width="100" height="100" style="border:1px solid #000000;"></canvas>
+      
       <br>
       <br>
       <br>
       <br>
       <br> 
-      Canvas3 line externalisee:
-      <canvas id="myCanvas3" width="200" height="100" style="border:1px solid #000000;">
-      </canvas>
-    
+      
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
@@ -55,12 +50,6 @@ Canvas1:
       });
     </script>
     <!--  https://www.w3schools.com/html/html5_canvas.asp-->
-    <script>
-      var c = document.getElementById("myCanvas");
-      var ctx = c.getContext("2d");
-      ctx.moveTo(0, 0);
-      ctx.lineTo(200, 100);
-      ctx.stroke();
-      </script>
+    
   </body>
 </html>
