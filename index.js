@@ -69,14 +69,25 @@ function drawArrayOn(arr, ctx1) {
   if (s >= 1) {
     /**2=line : */
     if (s >= 2) {
-      for (let index = 0; index - 1 < s; index++) {
+      for (let index = 0; index < s - 1; index++) {
+        console.log("index=");
+        console.log(index);
+
         const pointFrom = arr[index];
         const pointTo = arr[index + 1];
         ctx1.beginPath();
-        console.log("pointFrom.x=" + (pointFrom.x).toString;
-        console.log("pointTo.x=" + pointTo.x);
+        //console.log("pointFrom.x=" + (pointFrom.x).toString;
+        //%O https://stackoverflow.com/questions/7912576/console-log-showing-contents-of-array-object
+        console.log("pointFrom.x=");
+        console.log(pointFrom.x);
 
         ctx1.moveTo(pointFrom.x, pointFrom.y);
+
+        console.log("pointTo.x=");
+        console.log(pointTo.x);
+        console.log("pointTo.y=");
+        console.log(pointTo.y);
+
         ctx1.lineTo(pointTo.x, pointTo.y);
         //https://www.html5canvastutorials.com/tutorials/html5-canvas-line-color/
         ctx1.lineWidth = 2;
