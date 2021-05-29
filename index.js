@@ -8,7 +8,8 @@ function domloaded() {
   //https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API
   //rectangle vert
   const canvas1 = document.getElementById("canvas");
-  const ctx1 = canvas1.getContext("2d");
+  // const ctx1 = canvas1.getContext("2d");
+  var ctx1 = canvas1.getContext("2d");
 
   ctx1.fillStyle = "green";
   //ctx1.fillRect(10, 10, 150, 100);
@@ -55,19 +56,38 @@ function domloaded() {
   //https://www.html5canvastutorials.com/tutorials/html5-canvas-line-color/
   ctx1.lineWidth = 2;
   // set line color
-  ctx1.strokeStyle = '#ff0000';
-
+  ctx1.strokeStyle = "#ff0000";
   ctx1.stroke();
-  
+
+  drawArrayOn(pointsArray, ctx1);
 }
 
-/**just On draw from array
- * Green*/
-function drawArrayOn() {
+/**just On draw from array Green*/
+function drawArrayOn(arr, ctx1) {
+  s = arr.length;
+  //from part = left of segments : index-1
+  if (s >= 1) {
+    /**2=line : */
+    if (s >= 2) {
+      for (let index = 0; index - 1 < s; index++) {
+        const pointFrom = arr[index];
+        const pointTo = arr[index + 1];
+        ctx1.beginPath();
+        console.log("pointFrom.x=" + (pointFrom.x).toString;
+        console.log("pointTo.x=" + pointTo.x);
 
-
-
-
+        ctx1.moveTo(pointFrom.x, pointFrom.y);
+        ctx1.lineTo(pointTo.x, pointTo.y);
+        //https://www.html5canvastutorials.com/tutorials/html5-canvas-line-color/
+        ctx1.lineWidth = 2;
+        // set line color
+        ctx1.strokeStyle = "#00ff00";
+        ctx1.stroke();
+      }
+    } else {
+      console.log("no Points enough");
+    }
+  }
 }
 
 //just draw last line
