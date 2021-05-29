@@ -25,41 +25,89 @@ function domloaded() {
 
   ctx1.lineTo(100, 30);
 
-
   ctx1.lineTo(0, 30);
 
   ctx1.stroke();
+
+  var p1 = new Point(1, 1);
+  var p2 = new Point(29, 42);
+  var p3 = new Point(70, 30);
+  var pointsArray = [];
+  //pointsArray[0] = p1;
+  pointsArray.push(p1);
+  pointsArray.push(p2);
+  pointsArray.push(p3);
+  //pointsArray[1] = p2;
+
+  //pointsArray[2] = p3;
+  //pointsArray.push("elt2");
+
+  console.log("while AV size=" + pointsArray.length);
+  var cpt = 0;
+  while (cpt < pointsArray.length) {
+    console.log("while=" + cpt);
+    cpt++;
+  }
+  ctx1.beginPath();
+  ctx1.moveTo(100, 0);
+  ctx1.lineTo(0, 100);
+
+  //https://www.html5canvastutorials.com/tutorials/html5-canvas-line-color/
+  ctx1.lineWidth = 2;
+  // set line color
+  ctx1.strokeStyle = '#ff0000';
+
+  ctx1.stroke();
+  
 }
 
-//just On draw from array
+/**just On draw from array
+ * Green*/
 function drawArrayOn() {
+
+
+
 
 }
 
 //just draw last line
-function drawArrayDiff() {
+function drawArrayDiff() {}
 
-}
-
-var sizeArrayMaxSize=10;
+var sizeArrayMaxSize = 10;
 
 //just draw last line AND delete first line White + update array
-function drawArrayUpdate(sizeArrayMaxSizee) {
-
-}
+function drawArrayUpdate(sizeArrayMaxSizee) {}
 
 //appends Point to end Of any Array
-function addPointToEnd(pointt) {
-
-}
+function addPointToEnd(pointt) {}
 
 //update Array (head + tail pop()) regarding  sizeArrayMaxSize
-function addPointToEndIf(pointt) {
+function addPointToEndIf(pointt) {}
 
-}
-
-class Point{
+class Point {
   x;
   y;
-
+  constructor(xx, yy) {
+    this.x = xx;
+    this.y = yy;
+  }
 }
+
+//https://www.w3schools.com/js/js_object_prototypes.asp
+function Person(first, last, age, eyecolor) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eyecolor;
+}
+
+var myFather = new Person("John", "Doe", 50, "blue");
+
+//https://www.w3schools.com/js/js_classes.asp
+class Car {
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+  }
+}
+let myCar1 = new Car("Ford", 2014);
