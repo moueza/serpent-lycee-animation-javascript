@@ -60,6 +60,18 @@ function domloaded() {
   ctx1.stroke();
 
   drawArrayOn(pointsArray, ctx1);
+  
+  cpt=-1;
+  //~ do...while
+  while(cpt++>0){
+  console.log("while 1);
+ ctx1.beginPath();
+  ctx1.moveTo(0, 0+20*cpt);
+  ctx1.lineTo(100, 10+20*cpt);
+    
+  ctx1.lineTo(0, 20+20*cpt);
+    ctx1.stroke();
+  }
 }
 
 /**just On draw from array Green*/
