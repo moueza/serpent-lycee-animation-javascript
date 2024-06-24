@@ -11,16 +11,29 @@
     <div id="app">
       v16
       <div id="div1"></div>
-Canvas1:
-<!--rect vert : https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API-->
+      Canvas1:
+      <!--rect vert : https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API-->
       <canvas id="canvas" width="100" height="100" style="border:1px solid #000000;"></canvas>
       
-      <br>
-      <br>
-      <br>
-      <br>
-      <br> 
+      <br/>
       
+      <!--form action="buttony()">
+	
+	<input type="text" id="lname" name="lname"><br><br>
+	<input id="buttonsubmit" type="submit" value="STOP">
+	
+      </form--> 
+    </div>
+    <button id="buttonStandalone">
+      
+      BUTTON
+    </button>
+    <div>
+      cpt=
+      <div id="cptid">
+	
+	
+      </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
@@ -28,25 +41,25 @@ Canvas1:
 
     <script>
       const app = new Vue({
-        el: "#app",
-        data: {
-          message: "Bonjour Openclassrooms clap", //String
-          answerToLife: 42, //number
-          groceries: ["pommes", "bananes", "noix de coco"], //Arrays
-          timeForFlunch: false, //Boolean
-          info: {
-            //object
-            topic: "VueJS",
-            length: 5,
+          el: "#app",
+          data: {
+              message: "Bonjour Openclassrooms clap", //String
+              answerToLife: 42, //number
+              groceries: ["pommes", "bananes", "noix de coco"], //Arrays
+              timeForFlunch: false, //Boolean
+              info: {
+		  //object
+		  topic: "VueJS",
+		  length: 5,
+              },
+
+              //TODO compute here
+              //costOfApples:2.5/20,
+              costOfApples: 2.5 / 20,
+
+              costOfBananas: 2,
+              costOfCoconuts: 1.5,
           },
-
-          //TODO compute here
-          //costOfApples:2.5/20,
-          costOfApples: 2.5 / 20,
-
-          costOfBananas: 2,
-          costOfCoconuts: 1.5,
-        },
       });
     </script>
     <!--  https://www.w3schools.com/html/html5_canvas.asp-->
